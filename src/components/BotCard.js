@@ -21,10 +21,11 @@ const BotCard = props => {
 
   return (
     <div className="ui column">
+      {/* <h1>test to see if component rendered</h1> */}
       <div
         className="ui card"
         key={bot.id}
-        onClick={() => console.log("add code to connect event listener")}
+        onClick={e => props.handleCardClick(e, bot.id)}
       >
         <div className="image">
           <img alt="oh no!" src={bot.avatar_url} />
@@ -56,7 +57,6 @@ const BotCard = props => {
       </div>
     </div>
   );
-
 };
 
 export default BotCard;
