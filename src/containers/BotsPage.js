@@ -18,7 +18,6 @@ class BotsPage extends React.Component {
           bots: bots
         })
       );
-    // console.log(this.state.botArmy.push("bot"));
   }
 
   handleCardClick = (e, id) => {
